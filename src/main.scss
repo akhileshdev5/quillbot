@@ -17,7 +17,7 @@
   .heading {
     margin: 30px 15px 15px;
   }
-  .button {
+  .Upgrade-button {
     margin-top: 20px;
     text-transform: none;
     border-radius: 20px;
@@ -75,4 +75,47 @@ ul{
 .content-wrapper{
   padding: 20px 0 0;
   
+}
+.carousel-wrapper{
+  text-align: center;
+}
+
+
+.carousel-caption{
+  position: relative;
+  color: black;
+  margin-right: 34px;
+  margin-left: -58px;
+}
+
+.carousel-item{
+  width:250px;
+  margin-left:40px;
+  margin-top: 30px;
+}
+
+.button {
+  margin-top: 20px;
+  text-transform: none;
+  border-radius: 20px;
+  font-size: 17px;
+  background-color: #499557;
+  width: 300px;
+  border: none;
+  height: 40px;
+  align-items: center;
+  color: whitesmoke;
+  font-weight: 700;
+}
+.mob-view{
+  display: none;
+}
+
+@media (max-width:764px) {
+  .test{
+    display: none;
+  }
+  .mob-view{
+    display: block;
+  }
 }
