@@ -13,8 +13,7 @@ spec:
         app: quillbot
     spec:
       containers:
-      - name: quillbot
-        image: quillbotimage:latest
-        imagePullPolicy: Never
+      - name: quillbot-container   # MUST match Jenkins
+        image: imakhileshdev5/quillbotimage:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000
