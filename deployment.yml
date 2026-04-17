@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quillbot-app
+  name: quillbot-deployment
 spec:
   replicas: 2
   selector:
@@ -13,7 +13,8 @@ spec:
         app: quillbot
     spec:
       containers:
-      - name: quillbot-container   # MUST match Jenkins
-        image: imakhileshdev5/quillbotimage:latest
+      - name: quillbot
+        image: quillimage:latest
+        imagePullPolicy: Never
         ports:
-        - containerPort: 3000
+        - containerPort: 80
