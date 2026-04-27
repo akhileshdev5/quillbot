@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: quillbot
-        image: imakhileshdev5/quillbotimage:latest
+        image: imakhileshdev5/quillimage
         ports:
         - containerPort: 80
