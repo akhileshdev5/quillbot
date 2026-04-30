@@ -7,7 +7,6 @@ spec:
   selector:
     app: quillbot
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80   
-      nodePort: 30909
+    - port: 80
+      targetPort: 80
+      nodePort: 30007
