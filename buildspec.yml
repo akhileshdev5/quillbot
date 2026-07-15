@@ -2,15 +2,18 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 22
     commands:
-      - echo Installing dependencies
+      - echo "Installing dependencies..."
       - npm install
 
   build:
     commands:
-      - echo Building application
-      - npm run build
+      - echo "Building React application..."
+      - CI=false npm run build
 
 artifacts:
+  base-directory: build
   files:
     - '**/*'
