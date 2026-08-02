@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - echo Building application
-      - npm run build
+      - CI=false npm run build
 
 artifacts:
   files:
